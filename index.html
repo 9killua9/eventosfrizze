@@ -1,0 +1,88 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>Fiestas Frizze</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+<link rel="stylesheet" href="css/idangerous.swiper.css">
+<link rel="stylesheet" href="css/gral.css">
+<link rel="stylesheet" href="css/swiper-demos.css?v=1.8">
+<!-- 
+<script type="text/javascript" charset="utf-8" src="js/cordova-2.3.0.js"></script>
+ -->
+<script type="text/javascript" src="js/libs/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="js/idangerous.swiper-1.9.1.min.js"></script>
+<script type="text/javascript" src="js/idangerous.swiper.scrollbar-1.2.js"></script>
+<script type="text/javascript" src="js/swiper-demos.js"></script>
+<style>
+  .swiper-scrollbar {width: 100%; height: 4px; border-radius: 10px; position: absolute; left:0; bottom:2px; -ms-touch-action: none; background: none } .swiper-scrollbar-drag {height: 100%; width: 100%; position: relative; background: rgba(0,0,0,0.5); border-radius: 10px; }
+</style>
+
+  <script type="text/javascript" charset="utf-8">
+
+    // Wait for Cordova to connect with the device
+    /*if( window.localStorage.getItem("prov") != null || window.localStorage.getItem("prov") != "NULL")
+            window.location.href="interna.html";
+*/
+    $(document).ready(function(){
+
+        keyname = window.localStorage.key("prov");
+        // keyname is now equal to "key"
+        prov = window.localStorage.getItem(keyname);
+        if (prov != null && prov != "")
+          window.location.href="interna.html";
+        
+        $(".botella").css("margin-top",parseInt($(window).height())/2-210)
+    });
+    document.addEventListener("deviceready",onDeviceReady,false);
+    // Cordova is ready
+    //
+    function onDeviceReady(){}
+    
+    // Retrieve an existing file, or create it if it does not exist
+  </script>
+</head>
+
+<body onload="">
+  <div class="fondo1">
+      <form name="cargaInicio" style="margin:0 auto !important;">
+          <select name="cambiaProvincia" class="selectIndex" style="opacity:1;background: url('template/fondo/select.png') no-repeat 14px 0 transparent !important; border:none !important;">
+            <option value="-"> Elija su provincia</option>
+            <option value="0"> Buenos Aires </option>
+                <option value="3"> Cordoba </option>
+                <option value="2"> Entre Rios </option>
+                <option value="12"> Jujuy </option>
+                <option value="16"> Mendoza </option>
+                <option value="17"> Neuquen </option>
+                <option value="10"> Salta </option>
+                <option value="15"> San Juan </option>
+                <option value="20"> Santa Cruz </option>
+                <option value="4"> Santa Fe </option>
+                <option value="9"> Santiago del Estero </option>
+                <option value="11"> Tucuman </option>
+                <option value="12"> Jujuy </option>
+                <option value="8"> Catamarca </option>
+                <option value="14"> Chaco </option>
+                <option value="13"> Formosa </option>
+                <option value="5"> Corrientes </option>
+                <option value="6"> Misiones </option>
+                <option value="7"> La Rioja </option>
+                <option value="1"> San Luis </option>
+                <option value="23"> La Pampa </option>
+                <option value="18"> Rio Negro </option>
+                <option value="21"> Tierra del Fuego </option>
+                <option value="19"> Chubut </option>
+          </select>
+        <input type="submit" class="botonVerMas1 modif" name=" Ir " value=" Ver fiestas "/>
+      </form>
+      <img src="template/fondo/2.png" class="botella";/>
+    </div>
+</body>
+</html>

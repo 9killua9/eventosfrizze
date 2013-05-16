@@ -1,0 +1,3 @@
+svg{width:100% !important;}
+svg g {-webkit-transform: scale(0.60);-moz-transform: scale(0.60);-ms-transform: scale(0.60);-o-transform: scale(0.60);transform: scale(0.60);} /*-webkit-transform: scale(0.37);-moz-transform: scale(0.37);-ms-transform: scale(0.37);-o-transform: scale(0.37);transform: scale(0.37);*/
+.contenidoCorazon{-webkit-transition-property:-webkit-transform, all; -webkit-transition-duration:1s; -webkit-transition-timing-function:ease;}
